@@ -11,7 +11,7 @@ function Actors() {
           <p>Movies:</p>
           <ul>
             {actor.movies.map((movie, index) => (
-              <li key={index}>{movie}</li>
+              <li key={`${movie}-${index}`}>{movie}</li>
             ))}
           </ul>
         </div>
